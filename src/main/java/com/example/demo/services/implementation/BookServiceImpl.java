@@ -46,7 +46,7 @@ public class BookServiceImpl implements BookService {
         Optional<Book> editedBook = bookRepository.findById(id);
         if (editedBook.isPresent()) {
             bookRepository.deleteById(id);
-            bookRepository.save(new Book(book.getId(), book.getUsers(), book.getTitle(), book.getAuthor(), book.getISBN()));
+            bookRepository.save(new Book(book.getId(), book.getTitle(), book.getAuthor(), book.getISBN()));
 
             return book;
         }

@@ -20,9 +20,9 @@ public class Book {
     @GeneratedValue
     private int id;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "user_id")
-    private List<User> users = new ArrayList<>();
+//    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+//    @JoinColumn(name = "user_id")
+//    private List<User> users = new ArrayList<>();
 
     private String title;
     private String author;
