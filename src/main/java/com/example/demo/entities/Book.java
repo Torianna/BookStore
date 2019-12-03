@@ -5,8 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.ArrayList;
-import java.util.List;
+
 
 @Data
 @NoArgsConstructor
@@ -19,10 +18,6 @@ public class Book {
     @Id
     @GeneratedValue
     private int id;
-
-//    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
-//    @JoinColumn(name = "user_id")
-//    private List<User> users = new ArrayList<>();
 
     private String title;
     private String author;
